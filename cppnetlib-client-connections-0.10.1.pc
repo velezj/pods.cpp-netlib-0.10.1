@@ -1,0 +1,11 @@
+prefix=PREFIX
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cpp-netlib client connections library
+Description: cpp-netlib client connections library
+
+Version: 0.10.1
+Libs: -L${libdir} -lcppnetlib-client-connections
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=PREFIX
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cpp-netlib server parsers library
+Description: cpp-netlib server parsers  library
+
+Version: 0.10.1
+Libs: -L${libdir} -lcppnetlib-server-parsers
+Cflags: -I${includedir}

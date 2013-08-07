@@ -1,0 +1,11 @@
+prefix=PREFIX
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cpp-netlib URI library
+Description: cpp-netlib URI library
+
+Version: 0.10.1
+Libs: -L${libdir} -lcppnetlib-uri
+Cflags: -I${includedir}
