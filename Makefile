@@ -56,13 +56,13 @@ cpp-netlib-fetch-and-make:
 
 create-pkconfig:
 
-	sed s@PREFIX@$(BUILD_PREFIX)@ cppnetlib-uri-0.10.1.pc > $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-uri-0.10.1.pc
-	sed s@PREFIX@$(BUILD_PREFIX)@ cppnetlib-server-parsers-0.10.1.pc > $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-server-parsers-0.10.1.pc
-	sed s@PREFIX@$(BUILD_PREFIX)@ cppnetlib-client-connections-0.10.1.pc > $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-client-connections-0.10.1.pc
+	# sed s@PREFIX@$(BUILD_PREFIX)@ cppnetlib-uri-0.10.1.pc > $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-uri-0.10.1.pc
+	# sed s@PREFIX@$(BUILD_PREFIX)@ cppnetlib-server-parsers-0.10.1.pc > $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-server-parsers-0.10.1.pc
+	# sed s@PREFIX@$(BUILD_PREFIX)@ cppnetlib-client-connections-0.10.1.pc > $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-client-connections-0.10.1.pc
 
-	echo $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-uri-0.10.1.pc >> pod-build/install_manifest.txt
-	echo $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-server-parsers-0.10.1.pc >> pod-build/install_manifest.txt
-	echo $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-client-connections-0.10.1.pc >> pod-build/install_manifest.txt
+	# echo $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-uri-0.10.1.pc >> pod-build/install_manifest.txt
+	# echo $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-server-parsers-0.10.1.pc >> pod-build/install_manifest.txt
+	# echo $(BUILD_PREFIX)/lib/pkgconfig/cppnetlib-client-connections-0.10.1.pc >> pod-build/install_manifest.txt
 
 
 
