@@ -14,6 +14,7 @@ endif()
 
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 add_definitions(-DBOOST_NETWORK_ENABLE_HTTPS)
+add_definitions(-fPIC)
 
 
 #add_subdirectory(cpp-netlib-0.10.1/libs/network/src)
@@ -32,6 +33,10 @@ add_library(cppnetlib-server-parsers ${CPP-NETLIB_HTTP_SERVER_SRCS})
 
 set(CPP-NETLIB_HTTP_CLIENT_SRCS cpp-netlib-0.10.1/libs/network/src/client.cpp)
 add_library(cppnetlib-client-connections ${CPP-NETLIB_HTTP_CLIENT_SRCS})
+
+pods_install_libraries( cppnetlib-client-connections )
+pods_install_libraries( cppnetlib-server-parsers )
+pods_install_libraries( cppnetlib-uri )
 
 
 # These are the libraries explicitly in the libs/network/src subdir
