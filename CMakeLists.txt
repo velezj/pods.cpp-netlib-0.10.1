@@ -74,5 +74,10 @@ pods_use_pkg_config_packages( cppnetlib-client-connections
 
 
 
+install( 
+  DIRECTORY cpp-netlib-0.10.1/boost 
+  DESTINATION include/
+)
+
 
 enable_testing()
