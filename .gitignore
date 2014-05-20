@@ -1,0 +1,6 @@
+pod-build/
+*~
+*.touch
+*.tar.gz
+cpp-netlib-0.10.1/
+
